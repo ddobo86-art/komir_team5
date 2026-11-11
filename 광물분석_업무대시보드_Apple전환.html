@@ -22025,6 +22025,81 @@ body{padding:0!important;background:#f5f5f7;color:#1d1d1f}
 #mineral-studio .omd-count-visual{display:inline-block;vertical-align:baseline;text-align:right;font-variant-numeric:tabular-nums;letter-spacing:inherit}
 #mineral-studio .omd-count-accessible{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}
 
+#mineral-studio.omd-home-view .ms-title{min-height:300px}
+#mineral-studio.omd-home-view .ms-title>div{width:min(100%,760px)}
+#mineral-studio .omd-home-search{display:flex;align-items:center;gap:8px;margin-top:24px;max-width:600px;padding:6px;background:#fff;border:1px solid #ffffff30;border-radius:12px}
+#mineral-studio .omd-home-search input{flex:1;min-width:0;border:0;border-radius:7px;background:#fff;color:#1d1d1f;font-size:1rem;padding:10px 12px;min-height:46px;box-shadow:none}
+#mineral-studio .omd-home-search input::placeholder{color:#6b7077}
+#mineral-studio .omd-home-search button{min-height:46px;min-width:76px;border:0;border-radius:8px;padding:10px 20px;background:#215d49;color:#fff;font-size:.9375rem;font-weight:600}
+#mineral-studio .omd-search-results{background:var(--surface);padding:24px;border-radius:14px;border:1px solid var(--line)}
+#mineral-studio .omd-search-results[hidden]{display:none!important}
+#mineral-studio .omd-results-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}
+#mineral-studio .omd-results-status{font-size:1rem;font-weight:600;line-height:1.6;overflow-wrap:anywhere}
+#mineral-studio .omd-home-clear,#mineral-studio .omd-home-more{border:0;background:transparent;color:var(--green);font-size:.875rem;min-height:44px;padding:8px}
+#mineral-studio .omd-chart-results{display:grid;gap:8px}
+#mineral-studio .omd-chart-result{display:flex;align-items:center;gap:16px;min-height:60px;width:100%;border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:12px 18px;text-align:left;font-size:.9375rem}
+#mineral-studio .omd-result-kind{font-size:.75rem;font-weight:500;color:var(--muted)}
+#mineral-studio .omd-result-arrow{margin-left:auto;color:var(--green)}
+#mineral-studio .omd-results-scope,#mineral-studio .omd-results-empty{font-size:.875rem;color:var(--muted);line-height:1.7;margin-top:16px}
+#mineral-studio .omd-request-results{display:grid;gap:8px;margin-top:12px}
+#mineral-studio .omd-request-result{border-bottom:1px solid var(--line);padding:4px 0}
+#mineral-studio .omd-request-result summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:52px;cursor:pointer;font-size:.9375rem;padding:8px 4px}
+#mineral-studio .omd-request-name{font-weight:550;word-break:keep-all;overflow-wrap:anywhere}
+#mineral-studio .omd-request-status{font-size:.8125rem;color:var(--muted);white-space:nowrap}
+#mineral-studio .omd-request-result dl{display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px 16px;margin:4px 0 20px;padding:16px;background:var(--bg);border-radius:10px;font-size:.875rem;line-height:1.7}
+#mineral-studio .omd-request-result dt{color:var(--muted)}#mineral-studio .omd-request-result dd{margin:0;overflow-wrap:anywhere}
+#mineral-studio .omd-home-deck{min-width:0;scroll-margin-top:88px}
+#mineral-studio .omd-deck-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:8px 0 20px}
+#mineral-studio h2.omd-deck-title{font-size:1.375rem;font-weight:650;letter-spacing:-.02em}
+#mineral-studio .omd-deck-controls{display:flex;gap:4px;align-items:center}
+#mineral-studio .omd-deck-position{font-size:.8125rem;font-variant-numeric:tabular-nums;color:var(--muted);margin-right:12px}
+#mineral-studio .omd-deck-controls button{display:grid;place-items:center;min-width:44px;min-height:44px;padding:4px;border:1px solid var(--line);border-radius:50%;background:var(--surface);color:var(--ink)}
+#mineral-studio .omd-deck-arrow{font-size:1.5rem;line-height:1}
+#mineral-studio .omd-deck-play{font-size:.8125rem}
+#mineral-studio .omd-area-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid var(--line);gap:16px}
+#mineral-studio .omd-area-tab{position:relative;min-height:60px;border:0;background:transparent;color:var(--muted);font-size:1rem;padding:12px 8px;line-height:1.5;font-weight:500;word-break:keep-all}
+#mineral-studio .omd-area-tab[aria-selected=true]{color:var(--green);font-weight:650}
+#mineral-studio .omd-area-tab[aria-selected=true]::after{content:'';position:absolute;height:3px;bottom:-1px;left:0;right:0;background:var(--green);border-radius:2px}
+#mineral-studio .omd-deck-track{height:2px;background:var(--line);overflow:hidden;margin:12px 0}
+#mineral-studio .omd-deck-track>span{display:block;width:100%;height:100%;background:var(--green);transform:scaleX(0);transform-origin:left center}
+#mineral-studio .omd-deck-stage{height:740px;min-width:0;position:relative}
+#mineral-studio .omd-area-panel{height:100%;min-width:0}
+#mineral-studio .omd-area-panel[hidden]{display:none!important}
+#mineral-studio .omd-area-panel>.ms-panel{box-sizing:border-box;height:100%;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+#mineral-studio .omd-home-deck .geo-map{height:380px;min-height:380px}
+#mineral-studio .omd-home-deck .ex-goals{display:grid;grid-template-columns:1fr;gap:24px;margin:32px 0}
+#mineral-studio .omd-home-deck .ex-goal{border-bottom:1px solid var(--line);padding-bottom:24px}
+#mineral-studio .omd-home-deck .ex-goal:last-child{border:0}
+#mineral-studio .omd-home-deck .ex-goal b{font-size:2.5rem}
+#mineral-studio .omd-home-deck .ex-slot-progress .ms-donut-layout{grid-template-columns:1fr;justify-items:center;gap:24px;padding:32px 0}
+#mineral-studio .omd-home-deck .ms-donut{max-width:300px;width:100%}
+#mineral-studio .omd-home-deck .ms-donut-center strong{font-size:2.5rem}
+#mineral-studio .omd-home-deck .ms-donut-legend{display:flex;gap:32px;justify-content:center;flex-wrap:wrap}
+#mineral-studio .omd-home-deck .ms-donut-legend strong{font-size:1.25rem}
+#mineral-studio .omd-home-deck .ms-donut-legend>div{display:flex;align-items:center;gap:16px}
+#mineral-studio .omd-home-deck .ms-flow{justify-content:center;gap:32px;font-size:1rem}
+@media(max-width:650px){
+ #mineral-studio.omd-home-view .ms-title>div{max-width:100%;width:100%}
+ #mineral-studio .omd-home-search{max-width:none;margin-top:20px;gap:4px;padding:4px}
+ #mineral-studio .omd-home-search input{font-size:.875rem;padding-inline:8px}
+ #mineral-studio .omd-home-search button{min-width:60px;padding-inline:12px;font-size:.875rem}
+ #mineral-studio .omd-search-results{padding:18px}
+ #mineral-studio .omd-results-heading{align-items:flex-start}
+ #mineral-studio .omd-results-status{font-size:.9375rem}
+ #mineral-studio .omd-chart-result{padding:12px;gap:10px}
+ #mineral-studio .omd-deck-toolbar{gap:8px;margin-bottom:12px}
+ #mineral-studio h2.omd-deck-title{font-size:1.125rem}
+ #mineral-studio .omd-deck-position{margin-right:4px;font-size:.75rem}
+ #mineral-studio .omd-deck-controls button{min-width:40px;min-height:44px}
+ #mineral-studio .omd-area-tabs{gap:8px}
+ #mineral-studio .omd-area-tab{padding:10px 2px;min-height:70px;font-size:.8125rem}
+ #mineral-studio .omd-deck-stage{height:760px}
+ #mineral-studio .omd-home-deck .geo-map{height:340px;min-height:340px}
+ #mineral-studio .omd-home-deck .ms-donut{max-width:240px}
+ #mineral-studio .omd-home-deck .ms-donut-legend{gap:20px}
+ #mineral-studio .omd-request-result dl{grid-template-columns:80px minmax(0,1fr);gap:8px}
+}
+
 </style><script id="omd-feel-presentation">
 /* One timeline per document: each panel's graphics and numbers share
    a start, progress, easing and completion frame. */
@@ -22108,7 +22183,15 @@ function createStatsTimeline(scope){
     observer?.disconnect();if(frame)view.cancelAnimationFrame(frame);
     groups.forEach(group=>{if(group.state!=='complete')finish(group);});groups.clear();active.clear();
   },{once:true});
-  return {register,refresh};
+  function replay(section){
+    groups.forEach(group=>{
+      if(group.element===section||section.contains(group.element)){
+        finish(group);group.state='queued';group.element.dataset.omdSyncState='queued';
+      }
+    });
+    refresh();
+  }
+  return {register,refresh,replay};
 }
 
 /* Graphics are advanced by the same frame loop as their panel's counters. */
@@ -22293,6 +22376,152 @@ function createQueryWheels(host,content){
   return {refresh};
 }
 
+/* Home search and ordered area carousel. Original chart nodes, map coordinates,
+   query logic and workbook data remain in place. Search runs in this browser. */
+function createHomeExplorer(host,content,onReveal){
+  const doc=host.ownerDocument,view=doc.defaultView;
+  const reduced=view.matchMedia('(prefers-reduced-motion: reduce)');
+  const period=8000;
+  let current=null,active=0,playing=!reduced.matches,query='',limit=8,timer=0,clockAnimation=null;
+  const normalize=value=>String(value||'').toLocaleLowerCase().replace(/\s+/g,'');
+  const matches=(text,tokens)=>{
+    const source=normalize(text),phrase=normalize(tokens.join(' '));
+    // Keep Korean names such as "시험자 가" together; a one-letter token
+    // must not match an unrelated word such as "가상의뢰" elsewhere.
+    return source.includes(phrase)||(tokens.length>1&&tokens.every(token=>normalize(token).length>=2)&&tokens.every(token=>source.includes(normalize(token))));
+  };
+  const make=(tag,className,text)=>{const node=doc.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
+  function stopClock(){if(timer)view.clearTimeout(timer);timer=0;if(clockAnimation){clockAnimation.cancel();clockAnimation=null;}}
+  function canPlay(){
+    return current?.home.isConnected&&playing&&current.visible&&!doc.hidden&&!current.hovered&&
+      (!current.deck.contains(doc.activeElement)||doc.activeElement===current.play)&&
+      !host.querySelector('dialog[open],.omd-wheel-popup:not([hidden]),.omd-criteria-popup:not([hidden])');
+  }
+  function schedule(){
+    stopClock();if(!current)return;
+    current.play.textContent=playing?'Ⅱ':'▶';
+    current.play.setAttribute('aria-label',playing?'차트 자동 보기 일시정지':'차트 자동 보기 재생');
+    current.play.setAttribute('aria-pressed',String(playing));
+    current.deck.dataset.autoPlaying=String(canPlay());
+    if(!canPlay())return;
+    if(!reduced.matches&&typeof current.bar.animate==='function')clockAnimation=current.bar.animate([{transform:'scaleX(0)'},{transform:'scaleX(1)'}],{duration:period,easing:'linear',fill:'forwards'});
+    timer=view.setTimeout(()=>{timer=0;if(canPlay())activate((active+1)%3,false);else schedule();},period);
+  }
+  function resizeMap(){
+    view.requestAnimationFrame(()=>{
+      if(active===0&&typeof geographicMap!=='undefined'&&geographicMap)geographicMap.invalidateSize({animate:false,pan:false});
+    });
+  }
+  function activate(index,manual=false){
+    if(!current)return;
+    active=(index+3)%3;
+    current.panels.forEach((panel,i)=>{
+      const selected=i===active;panel.hidden=!selected;
+      current.tabs[i].setAttribute('aria-selected',String(selected));current.tabs[i].tabIndex=selected?0:-1;
+      if(selected)panel.querySelectorAll('.omd-pending').forEach(node=>node.classList.remove('omd-pending'));
+    });
+    current.position.textContent=String(active+1).padStart(2,'0')+' / 03';
+    if(manual)playing=false;
+    onReveal(current.panels[active]);resizeMap();schedule();
+  }
+  function buildResults(){
+    if(!current)return;
+    const {results,input,areas}=current;
+    results.replaceChildren();results.hidden=!query.trim();
+    if(results.hidden){schedule();return;}
+    const tokens=query.trim().split(/\s+/);
+    const chartMatches=areas.map((area,index)=>({...area,index})).filter(area=>matches(area.title+' '+area.keywords,tokens));
+    const jobs=typeof exCohort==='function'?exCohort():[];
+    const jobMatches=jobs.filter(job=>matches([job.id,job.title,job.field,job.team,...(job.owners||[]),...(job.items||[]),...(job.materials||[]),...(job.categories||[])].join(' '),tokens));
+    const header=make('div','omd-results-heading');
+    const summary=make('p','omd-results-status','“'+query+'” · 지표 '+chartMatches.length+'개 · 의뢰 '+jobMatches.length+'건');summary.setAttribute('role','status');
+    const clear=make('button','omd-home-clear','검색 지우기');clear.type='button';clear.addEventListener('click',()=>{query='';input.value='';limit=8;buildResults();input.focus();});
+    header.append(summary,clear);results.append(header);
+    if(chartMatches.length){
+      const links=make('div','omd-chart-results');
+      chartMatches.forEach(area=>{
+        const button=make('button','omd-chart-result');button.type='button';
+        button.append(make('span','omd-result-kind','지표'),make('strong','',area.title),make('span','omd-result-arrow','↗'));
+        button.addEventListener('click',()=>{activate(area.index,true);current.deck.scrollIntoView({behavior:reduced.matches?'instant':'smooth',block:'start'});current.tabs[area.index].focus({preventScroll:true});});
+        links.append(button);
+      });results.append(links);
+    }
+    if(jobMatches.length){
+      results.append(make('p','omd-results-scope','의뢰 검색은 현재 연도·월·시험분야의 접수 의뢰 기준입니다.'));
+      const list=make('div','omd-request-results');
+      jobMatches.slice(0,limit).forEach(job=>{
+        const details=make('details','omd-request-result');
+        const caption=make('summary');caption.append(make('span','omd-request-name',job.id+' · '+(job.title||job.id)),make('span','omd-request-status',job.status));details.append(caption);
+        const fields=make('dl');
+        [['작업 ID',job.id],['담당자',[...(job.owners||[])].join(', ')],['시험항목',[...(job.items||[])].join(', ')],['시험분야',job.field||'미분류'],['접수일',job.received],['결과완수일',job.completed||'—']].forEach(([label,value])=>{fields.append(make('dt','',label),make('dd','',value));});
+        details.append(fields);list.append(details);
+      });results.append(list);
+      if(jobMatches.length>limit){const more=make('button','omd-home-more','의뢰 더 보기 ('+Math.min(limit,jobMatches.length)+' / '+jobMatches.length+')');more.type='button';more.addEventListener('click',()=>{limit+=8;buildResults();});results.append(more);}
+    }
+    if(!chartMatches.length&&!jobMatches.length)results.append(make('p','omd-results-empty','검색 결과가 없습니다. 다른 키워드로 검색해 주세요.'));
+    if(chartMatches.length)activate(chartMatches[0].index,true);
+    else{playing=false;schedule();}
+  }
+  function refresh(){
+    const home=content.querySelector('.ex-home-sections');
+    if(!home){if(current){stopClock();current.observer?.disconnect();current=null;active=0;}return;}
+    if(current?.home===home)return;
+    stopClock();current?.observer?.disconnect();
+    const panels=[home.querySelector('.ex-slot-map'),home.querySelector('.ex-slot-annual'),home.querySelector('.ex-slot-progress')];
+    if(panels.some(panel=>!panel))return;
+    const year=content.querySelector('#ex-year')?.value||'2026';
+    const areas=[
+      {title:'광산별 의뢰현황',keywords:'광산 지도 위치 좌표 지적 의뢰 광종'},
+      {title:year+'년 연간 목표 달성률',keywords:'연간 목표 달성률 실적 누적 성과 광물분석 광물감정'},
+      {title:'월별 시험진행현황',keywords:'월별 시험 진행 완수 미완수 접수 담당자 업무 편중도 잔량 처리'}
+    ];
+    const hero=content.querySelector('.ms-title>div');
+    const form=make('form','omd-home-search');form.setAttribute('role','search');form.setAttribute('aria-label','시험분석 키워드 검색');
+    const input=make('input');input.type='search';input.placeholder='광산명·시험항목·담당자·지표 검색';input.value=query;input.setAttribute('aria-label','검색 키워드');input.autocomplete='off';
+    const submit=make('button','','검색');submit.type='submit';form.append(input,submit);hero?.append(form);
+    const results=make('section','omd-search-results');results.setAttribute('aria-label','키워드 검색 결과');results.hidden=true;
+    content.querySelector('.ms-title').after(results);
+    const deck=make('section','omd-home-deck');deck.setAttribute('aria-label','영역별 차트 자동 보기');deck.setAttribute('aria-roledescription','캐러셀');
+    const toolbar=make('div','omd-deck-toolbar');toolbar.append(make('h2','omd-deck-title','영역별 차트'));
+    const controls=make('div','omd-deck-controls');
+    const position=make('span','omd-deck-position','01 / 03');position.setAttribute('aria-hidden','true');
+    const previous=make('button','omd-deck-arrow','‹');previous.type='button';previous.setAttribute('aria-label','이전 영역');
+    const play=make('button','omd-deck-play','Ⅱ');play.type='button';
+    const next=make('button','omd-deck-arrow','›');next.type='button';next.setAttribute('aria-label','다음 영역');
+    controls.append(position,previous,play,next);toolbar.append(controls);deck.append(toolbar);
+    const tablist=make('div','omd-area-tabs');tablist.setAttribute('role','tablist');tablist.setAttribute('aria-label','차트 영역');
+    const tabs=areas.map((area,i)=>{
+      const tab=make('button','omd-area-tab',area.title);tab.type='button';tab.id='omd-area-tab-'+i;tab.setAttribute('role','tab');tab.setAttribute('aria-controls','omd-area-panel-'+i);
+      tab.addEventListener('click',()=>activate(i,true));
+      tab.addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();const target=event.key==='Home'?0:event.key==='End'?2:(i+(event.key==='ArrowRight'?1:2))%3;activate(target,true);tabs[target].focus();}});
+      tablist.append(tab);return tab;
+    });deck.append(tablist);
+    const track=make('div','omd-deck-track'),bar=make('span');track.setAttribute('aria-hidden','true');track.append(bar);deck.append(track);
+    const stage=make('div','omd-deck-stage');
+    panels.forEach((panel,i)=>{panel.id='omd-area-panel-'+i;panel.classList.add('omd-area-panel');panel.setAttribute('role','tabpanel');panel.setAttribute('aria-labelledby',tabs[i].id);stage.append(panel);});
+    deck.append(stage);home.append(deck);home.querySelector('.ex-annual-progress-row')?.remove();
+    current={home,deck,panels,tabs,position,play,bar,areas,input,results,visible:false,hovered:false,observer:null};
+    form.addEventListener('submit',event=>{event.preventDefault();event.stopPropagation();query=input.value.trim();limit=8;buildResults();});
+    previous.addEventListener('click',()=>activate(active-1,true));next.addEventListener('click',()=>activate(active+1,true));
+    play.addEventListener('click',()=>{playing=!playing;if(playing)current.hovered=false;schedule();});
+    deck.addEventListener('pointerenter',event=>{if(event.pointerType!=='touch'){current.hovered=true;schedule();}});
+    deck.addEventListener('pointerleave',()=>{current.hovered=false;schedule();});
+    deck.addEventListener('focusin',schedule);deck.addEventListener('focusout',()=>view.requestAnimationFrame(schedule));
+    if('IntersectionObserver' in view){current.observer=new view.IntersectionObserver(entries=>{if(current?.home!==home)return;current.visible=entries.some(entry=>entry.isIntersecting);schedule();},{threshold:.15});current.observer.observe(stage);}
+    else current.visible=true;
+    activate(active,false);if(query.trim())buildResults();
+  }
+  doc.addEventListener('visibilitychange',schedule);
+  doc.addEventListener('focusin',()=>{if(current)view.requestAnimationFrame(schedule);});
+  const overlays=new view.MutationObserver(records=>{
+    if(current&&records.some(record=>record.target.matches('dialog,.omd-wheel-popup,.omd-criteria-popup')))schedule();
+  });
+  overlays.observe(host,{subtree:true,attributes:true,attributeFilter:['hidden','open']});
+  reduced.addEventListener('change',()=>{if(reduced.matches){playing=false;schedule();}});
+  view.addEventListener('pagehide',()=>{stopClock();current?.observer?.disconnect();overlays.disconnect();},{once:true});
+  return {refresh};
+}
+
 /* Presentation-only layer. Never modifies copies, workbook data or calculations. */
 (()=>{
   const host=document.getElementById('mineral-studio');
@@ -22303,6 +22532,7 @@ function createQueryWheels(host,content){
   const chartDrawing=createChartDrawing(content,statsTimeline);
   const numberCounters=createNumberCounters(content,statsTimeline);
   const queryWheels=createQueryWheels(host,content);
+  const homeExplorer=createHomeExplorer(host,content,panel=>statsTimeline.replay(panel));
   // The existing workload window receives the same presentation layer.
   if(typeof exShowWorkloadWindow==='function'){
     const originalWorkloadWindow=exShowWorkloadWindow;
@@ -22444,6 +22674,7 @@ function createQueryWheels(host,content){
     }
     arrangeCriteria();
     queryWheels.refresh();
+    homeExplorer.refresh();
     observer?.disconnect();
     content.querySelectorAll('.ms-panel,.ms-stat').forEach(node=>{
       node.classList.add('omd-reveal');
